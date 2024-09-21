@@ -18,12 +18,14 @@ namespace ProductManagement.Data
             modelBuilder.Entity<Link>()
                 .HasOne(l => l.Nomenklature)
                 .WithMany(n => n.ChildLinks)
-                .HasForeignKey(l => l.NomenklatureId);
+                .HasForeignKey(l => l.NomenklatureId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Link>()
                 .HasOne(l => l.Parent)
                 .WithMany(n => n.ParentLinks)
-                .HasForeignKey(l => l.ParentId);
+                .HasForeignKey(l => l.ParentId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

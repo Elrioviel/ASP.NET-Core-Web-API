@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Migrations\\20240921231450_UpdateCascadeDelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProductManagement\\Migrations\\20240921231450_UpdateCascadeDelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Migrations\\20240921225918_FK updated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProductManagement\\Migrations\\20240921225918_FK updated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\productmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\productmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\models\\entities\\link.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\models\\entities\\nomenklature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\models\\entities\\nomenklature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,14 +55,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\appsettings.json",
-              "RelativeDocumentMoniker": "ProductManagement\\appsettings.json",
-              "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\appsettings.json",
-              "RelativeToolTip": "ProductManagement\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-21T21:48:42.877Z",
+              "Title": "20240921231450_UpdateCascadeDelete.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Migrations\\20240921231450_UpdateCascadeDelete.cs",
+              "RelativeDocumentMoniker": "ProductManagement\\Migrations\\20240921231450_UpdateCascadeDelete.cs",
+              "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Migrations\\20240921231450_UpdateCascadeDelete.cs",
+              "RelativeToolTip": "ProductManagement\\Migrations\\20240921231450_UpdateCascadeDelete.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T23:14:50.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240921225918_FK updated.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Migrations\\20240921225918_FK updated.cs",
+              "RelativeDocumentMoniker": "ProductManagement\\Migrations\\20240921225918_FK updated.cs",
+              "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Migrations\\20240921225918_FK updated.cs",
+              "RelativeToolTip": "ProductManagement\\Migrations\\20240921225918_FK updated.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T22:59:18.73Z",
               "EditorCaption": ""
             },
             {
@@ -61,14 +86,40 @@
               "RelativeDocumentMoniker": "ProductManagement\\Data\\ApplicationDbContext.cs",
               "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "ProductManagement\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAowBkAAAAuAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAADwvxsAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T21:37:33.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "ProductManagement",
+              "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\ProductManagement.csproj",
+              "RelativeDocumentMoniker": "ProductManagement\\ProductManagement.csproj",
+              "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\ProductManagement.csproj",
+              "RelativeToolTip": "ProductManagement\\ProductManagement.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-21T22:49:10.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\appsettings.json",
+              "RelativeDocumentMoniker": "ProductManagement\\appsettings.json",
+              "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\appsettings.json",
+              "RelativeToolTip": "ProductManagement\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-21T21:48:42.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Link.cs",
               "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Models\\Entities\\Link.cs",
               "RelativeDocumentMoniker": "ProductManagement\\Models\\Entities\\Link.cs",
@@ -76,47 +127,7 @@
               "RelativeToolTip": "ProductManagement\\Models\\Entities\\Link.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T21:10:07.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Nomenklature.cs",
-              "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Models\\Entities\\Nomenklature.cs",
-              "RelativeDocumentMoniker": "ProductManagement\\Models\\Entities\\Nomenklature.cs",
-              "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Models\\Entities\\Nomenklature.cs",
-              "RelativeToolTip": "ProductManagement\\Models\\Entities\\Nomenklature.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T21:01:46.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "ProductManagement\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "ProductManagement\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T20:53:42.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "ProductManagement\\WeatherForecast.cs",
-              "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\WeatherForecast.cs",
-              "RelativeToolTip": "ProductManagement\\WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T20:53:37.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T21:10:07.676Z"
             },
             {
               "$type": "Document",
@@ -126,7 +137,7 @@
               "RelativeDocumentMoniker": "ProductManagement\\Program.cs",
               "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Program.cs",
               "RelativeToolTip": "ProductManagement\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T20:49:19.817Z",
               "EditorCaption": ""
@@ -134,6 +145,42 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Nomenklature.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Models\\Entities\\Nomenklature.cs",
+              "RelativeDocumentMoniker": "ProductManagement\\Models\\Entities\\Nomenklature.cs",
+              "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Models\\Entities\\Nomenklature.cs",
+              "RelativeToolTip": "ProductManagement\\Models\\Entities\\Nomenklature.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T21:01:46.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "ProductManagement\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "ProductManagement\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T20:53:42.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "ProductManagement\\WeatherForecast.cs",
+              "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\WeatherForecast.cs",
+              "RelativeToolTip": "ProductManagement\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T20:53:37.348Z"
             }
           ]
         }
