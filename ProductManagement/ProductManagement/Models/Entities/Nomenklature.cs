@@ -8,7 +8,7 @@ namespace ProductManagement.Models.Entities
         [Key]
         public int Id { get; set; }
         public required string Name { get; set; }
-        [Column(TypeName = "decimal(6, 2)")]
+        [Column(TypeName = "decimal(18, 2)")]
         public required decimal Price { get; set; }
         public ICollection<Link> ChildLinks { get; set; }
         public ICollection<Link> ParentLinks { get; set; }

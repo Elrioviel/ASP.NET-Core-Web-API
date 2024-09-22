@@ -4,7 +4,7 @@ using ProductManagement.Data;
 
 namespace ProductManagement.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/nomenklatures")]
     [ApiController]
     public class NomenklaturesController : ControllerBase
     {
@@ -20,6 +20,12 @@ namespace ProductManagement.Controllers
             var allNomenklatures = _dbContext.Nomenklatures.ToList();
 
             return Ok(allNomenklatures);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetNomenklatureById([FromRoute] int id)
+        {
+
         }
     }
 }
