@@ -63,19 +63,5 @@ namespace ProductManagement.Services
                 Quantity = link.Quantity
             };
         }
-
-        public void UpdateLink(int id, LinkDTO linkDTO)
-        {
-            var link = _linkRepository.GetById(id);
-
-            if (link == null)
-                return;
-
-            link.NomenklatureId = linkDTO.NomenklatureId;
-            link.ParentId = linkDTO.ParentId;
-            link.Quantity = linkDTO.Quantity;
-
-            _linkRepository.Update(link);
-        }
     }
 }

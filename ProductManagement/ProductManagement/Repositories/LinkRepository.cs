@@ -34,10 +34,9 @@ namespace ProductManagement.Repositories
             return _dbContext.Links.Find();
         }
 
-        public void Update(Link link)
+        public IEnumerable<Link> GetByParentId(int parentId)
         {
-            _dbContext.Links.Update(link);
-            _dbContext.SaveChanges();
+            return _dbContext.Links.Where(l => l.ParentId == parentId).ToList();
         }
     }
 }

@@ -7,7 +7,7 @@ namespace ProductManagement.Repositories
         IEnumerable<Link> GetAll();
         Link GetById(int id);
         void Add(Link link);
-        void Update(Link link);
         void Delete(Link link);
+        IEnumerable<Link> GetByParentId(int parentId);
     }
 }

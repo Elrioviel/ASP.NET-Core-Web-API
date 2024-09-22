@@ -7,7 +7,6 @@ namespace ProductManagement.Services
         IEnumerable<LinkDTO> GetAllLinks();
         LinkDTO GetLinkById(int id);
         void AddLink(LinkDTO linkDTO);
-        void UpdateLink(int id, LinkDTO linkDTO);
         void DeleteLink(int id);
     }
 }

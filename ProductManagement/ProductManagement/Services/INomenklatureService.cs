@@ -8,5 +8,6 @@ namespace ProductManagement.Services
         NomenklatureDTO GetNomenklatureById(int id);
         void UpdateNomenklature(int id, NomenklatureDTO nomenklatureDTO);
         void DeleteNomenklatureById(int id);
+        void AddNomenklature(NomenklatureDTO nomenklatureDTO);
     }
 }

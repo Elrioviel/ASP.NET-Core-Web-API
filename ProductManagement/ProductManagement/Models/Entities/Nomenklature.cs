@@ -12,7 +12,5 @@ namespace ProductManagement.Models.Entities
         public required decimal Price { get; set; }
         public ICollection<Link> ChildLinks { get; set; }
         public ICollection<Link> ParentLinks { get; set; }
-
-
     }
 }
