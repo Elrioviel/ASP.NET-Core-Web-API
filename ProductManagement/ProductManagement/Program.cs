@@ -15,11 +15,13 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Register Repositories.
+// Register Nomenklature Repositories and Services.
 builder.Services.AddScoped<INomenklatureRepository, NomenklatureRepository>();
-
-// Register Services.
 builder.Services.AddScoped<INomenklatureService, NomenklatureService>();
+
+// Register Link Repositories and Services.
+builder.Services.AddScoped<ILinkRepository, LinkRepository>();
+builder.Services.AddScoped<ILinkService, LinkService>();
 
 var app = builder.Build();
 
