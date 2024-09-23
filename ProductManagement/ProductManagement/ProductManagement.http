@@ -1,2 +1,59 @@
-@ProductManagement_HostAddress = http://localhost:5107
+@ProductManagement_HostAddress = https://localhost:44305
 
+GET {{ProductManagement_HostAddress}}/api/nomenklatures
+Accept: application/json
+
+###
+
+### Get Nomenklatures by Id
+GET {{ProductManagement_HostAddress}}/api/nomenklatures/2
+Accept: application/json
+
+###
+
+### Create a new Nomenklature
+POST {{ProductManagement_HostAddress}}/api/nomenklatures
+Content-Type: application/json
+
+{
+  "name": "Продукт 10",
+  "price": 150.00
+}
+
+###
+
+### Update a Nomenklature
+PUT {{ProductManagement_HostAddress}}/api/nomenklatures/8
+Content-Type: application/json
+
+{
+  "name": "Продукт 9",
+  "price": 200.00
+}
+
+###
+
+### Delete aa Nomenklature
+DELETE {{ProductManagement_HostAddress}}/api/nomenklatures/8
+
+###
+
+### Link two products
+POST {{ProductManagement_HostAddress}}/api/nomenklatures/link
+Content-Type: application/json
+
+{
+  "nomenklatureId": 9,
+  "parentId": 1,
+  "quantity": 2
+}
+
+###
+
+### Delete a Link between two products
+DELETE {{ProductManagement_HostAddress}}/api/nomenklatures/link
+Content-Type: application/json
+
+{
+  "id": 7
+}
