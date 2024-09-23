@@ -50,7 +50,7 @@ namespace ProductManagement.Services
 
         public async Task<LinkDTO> GetLinkByIdAsync(int id)
         {
-            var link = await _linkRepository.GetNomenklatureByIdAsync(id);
+            var link = await _linkRepository.GetByIdAsync(id);
             
             if (link == null)
                 return null;

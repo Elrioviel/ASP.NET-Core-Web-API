@@ -36,25 +36,54 @@ namespace ProductManagement.Controllers
         [HttpPost]
         public async Task<IActionResult> AddNomenklature(NomenklatureDTO nomenklatureDTO)
         {
-            await _nomenklatureService.AddNomenklatureAsync(nomenklatureDTO);
-            
-            return Ok();
+            if (nomenklatureDTO == null)
+                return BadRequest("Nomenklature data is required.");
+
+            try
+            {
+                await _nomenklatureService.AddNomenklatureAsync(nomenklatureDTO);
+                return CreatedAtAction(nameof(GetNomenklatureById), new { id = nomenklatureDTO.Id }, nomenklatureDTO);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateNomenklature(int id, NomenklatureDTO nomenklatureDTO)
         {
-            await _nomenklatureService.UpdateNomenklatureAsync(id, nomenklatureDTO);
+            if (nomenklatureDTO == null)
+                return BadRequest("Nomenklature data is required.");
 
-            return Ok();
+            try
+            {
+                await _nomenklatureService.UpdateNomenklatureAsync(id, nomenklatureDTO);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteNomenklature(int id)
         {
-            await _nomenklatureService.DeleteNomenklatureByIdAsync(id);
+            try
+            {
+                var nomenklature = await _nomenklatureService.GetNomenklatureByIdAsync(id);
 
-            return Ok();
+                if (nomenklature == null)
+                    return NotFound($"Nomenklature with id: {id} not found.");
+
+                await _nomenklatureService.DeleteNomenklatureByIdAsync(id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
     }
 }

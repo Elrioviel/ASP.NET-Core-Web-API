@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\controllers\\nomenklaturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\controllers\\nomenklaturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\controllers\\linkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\controllers\\linkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\productmanagement.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\productmanagement.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\repositories\\ilinkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\repositories\\ilinkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\services\\linkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +19,24 @@
       "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\repositories\\linkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\services\\inomenklatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\services\\inomenklatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\productmanagement.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\productmanagement.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\repositories\\ilinkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\repositories\\ilinkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\services\\ilinkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\services\\ilinkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\services\\nomenklatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\services\\nomenklatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\controllers\\nomenklaturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\controllers\\nomenklaturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\services\\inomenklatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\services\\inomenklatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEBA6029-0338-4AC5-A8B8-677F2FCFC9CE}|ProductManagement\\ProductManagement.csproj|d:\\projects\\asp.net-core-web-api\\productmanagement\\productmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -122,8 +122,7 @@
               "RelativeToolTip": "ProductManagement\\Data\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T00:16:09.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T00:16:09.603Z"
             },
             {
               "$type": "Document",
@@ -135,25 +134,24 @@
               "RelativeToolTip": "ProductManagement\\DTOs\\NomenklatureDetailDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T23:02:56.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T23:02:56.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LinksController.cs",
               "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Controllers\\LinksController.cs",
               "RelativeDocumentMoniker": "ProductManagement\\Controllers\\LinksController.cs",
               "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Controllers\\LinksController.cs",
               "RelativeToolTip": "ProductManagement\\Controllers\\LinksController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAcwDQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T22:19:14.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ProductManagement.http",
               "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\ProductManagement.http",
               "RelativeDocumentMoniker": "ProductManagement\\ProductManagement.http",
@@ -161,25 +159,24 @@
               "RelativeToolTip": "ProductManagement\\ProductManagement.http",
               "ViewState": "AQIAACUAAAAAAAAAAAAkwDcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-09-22T22:10:11.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T22:10:11.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "LinkService.cs",
               "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Services\\LinkService.cs",
               "RelativeDocumentMoniker": "ProductManagement\\Services\\LinkService.cs",
               "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Services\\LinkService.cs",
               "RelativeToolTip": "ProductManagement\\Services\\LinkService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAAxAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwD4AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T18:49:12.99Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ILinkService.cs",
               "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Services\\ILinkService.cs",
               "RelativeDocumentMoniker": "ProductManagement\\Services\\ILinkService.cs",
@@ -187,18 +184,17 @@
               "RelativeToolTip": "ProductManagement\\Services\\ILinkService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T18:47:41.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T18:47:41.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "LinkRepository.cs",
               "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Repositories\\LinkRepository.cs",
               "RelativeDocumentMoniker": "ProductManagement\\Repositories\\LinkRepository.cs",
               "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Repositories\\LinkRepository.cs",
               "RelativeToolTip": "ProductManagement\\Repositories\\LinkRepository.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAzwCMAAAAJAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T18:43:48.892Z",
               "EditorCaption": ""
@@ -213,12 +209,11 @@
               "RelativeToolTip": "ProductManagement\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T15:35:54.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T15:35:54.873Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "INomenklatureService.cs",
               "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Services\\INomenklatureService.cs",
               "RelativeDocumentMoniker": "ProductManagement\\Services\\INomenklatureService.cs",
@@ -231,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ILinkRepository.cs",
               "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Repositories\\ILinkRepository.cs",
               "RelativeDocumentMoniker": "ProductManagement\\Repositories\\ILinkRepository.cs",
@@ -239,8 +234,7 @@
               "RelativeToolTip": "ProductManagement\\Repositories\\ILinkRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T18:42:19.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T18:42:19.811Z"
             },
             {
               "$type": "Document",
@@ -252,8 +246,7 @@
               "RelativeToolTip": "ProductManagement\\DTOs\\LinkDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T18:41:10.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T18:41:10.711Z"
             },
             {
               "$type": "Document",
@@ -265,12 +258,11 @@
               "RelativeToolTip": "ProductManagement\\Repositories\\INomenklatureRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T18:09:51.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T18:09:51.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "NomenklatureService.cs",
               "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Services\\NomenklatureService.cs",
               "RelativeDocumentMoniker": "ProductManagement\\Services\\NomenklatureService.cs",
@@ -278,8 +270,7 @@
               "RelativeToolTip": "ProductManagement\\Services\\NomenklatureService.cs",
               "ViewState": "AQIAAGQAAAAAAAAAAAAowEgAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T18:17:57.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T18:17:57.206Z"
             },
             {
               "$type": "Document",
@@ -291,8 +282,7 @@
               "RelativeToolTip": "ProductManagement\\Repositories\\NomenklatureRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T18:11:41.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T18:11:41.594Z"
             },
             {
               "$type": "Document",
@@ -304,18 +294,17 @@
               "RelativeToolTip": "ProductManagement\\DTOs\\NomenklatureDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T18:08:12.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T18:08:12.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "NomenklaturesController.cs",
               "DocumentMoniker": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Controllers\\NomenklaturesController.cs",
               "RelativeDocumentMoniker": "ProductManagement\\Controllers\\NomenklaturesController.cs",
               "ToolTip": "D:\\Projects\\ASP.NET-Core-Web-API\\ProductManagement\\ProductManagement\\Controllers\\NomenklaturesController.cs",
               "RelativeToolTip": "ProductManagement\\Controllers\\NomenklaturesController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAgwC4AAAAsAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAQwFYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T15:50:43.263Z",
               "EditorCaption": ""
@@ -330,8 +319,7 @@
               "RelativeToolTip": "ProductManagement\\Models\\Entities\\Nomenklature.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T15:34:38.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T15:34:38.474Z"
             },
             {
               "$type": "Document",
@@ -355,8 +343,7 @@
               "RelativeToolTip": "ProductManagement\\Models\\Entities\\Link.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T15:30:35.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T15:30:35.493Z"
             },
             {
               "$type": "Document",
