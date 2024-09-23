@@ -31,7 +31,7 @@ namespace ProductManagement.Repositories
 
         public Link GetById(int id)
         {
-            return _dbContext.Links.Find();
+            return _dbContext.Links.FirstOrDefault(n => n.NomenklatureId == id);
         }
 
         public IEnumerable<Link> GetByParentId(int parentId)

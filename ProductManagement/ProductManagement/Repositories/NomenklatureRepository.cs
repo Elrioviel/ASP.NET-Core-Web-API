@@ -31,7 +31,7 @@ namespace ProductManagement.Repositories
 
         public Nomenklature GetById(int id)
         {
-            return _dbContext.Nomenklatures.Find(id);
+            return _dbContext.Nomenklatures.FirstOrDefault(n => n.Id == id);
         }
 
         public void Update(Nomenklature nomenklature)

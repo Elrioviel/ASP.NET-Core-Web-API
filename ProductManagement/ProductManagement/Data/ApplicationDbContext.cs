@@ -21,6 +21,7 @@ namespace ProductManagement.Data
                 .HasForeignKey(l => l.NomenklatureId)
                 .OnDelete(DeleteBehavior.Cascade);
 
+            // Avoid multiple cascade paths by restricting DeleteBehavior.
             modelBuilder.Entity<Link>()
                 .HasOne(l => l.Parent)
                 .WithMany(n => n.ParentLinks)

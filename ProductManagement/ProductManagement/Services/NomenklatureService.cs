@@ -4,12 +4,12 @@ using ProductManagement.Repositories;
 
 namespace ProductManagement.Services
 {
-    public class NomenklatureService :INomenklatureService
+    public class NomenklatureService : INomenklatureService
     {
         private const int InitQuantity = 1;
         private readonly INomenklatureRepository _nomenklatureRepository;
         private readonly ILinkRepository _linkRepository;
-        
+
         public NomenklatureService(INomenklatureRepository nomenklatureRepository, ILinkRepository linkRepository)
         {
             _nomenklatureRepository = nomenklatureRepository;
@@ -30,10 +30,18 @@ namespace ProductManagement.Services
         public void DeleteNomenklatureById(int id)
         {
             var nomenklature = _nomenklatureRepository.GetById(id);
+            var childLinks = _linkRepository.GetByParentId(id);
 
             if (nomenklature == null)
                 return;
 
+            // Ensure cascade delete from link where nomenklature is parent.
+            foreach (var link in childLinks)
+            {
+                _linkRepository.Delete(link);
+            }
+
+            // Delete parent nomenklature.
             _nomenklatureRepository.Delete(nomenklature);
         }
 
@@ -49,29 +57,34 @@ namespace ProductManagement.Services
             }).ToList();
         }
 
-        public NomenklatureDTO GetNomenklatureById(int id)
+        public NomenklatureDetailDTO GetNomenklatureById(int id)
         {
             var nomenklature = _nomenklatureRepository.GetById(id);
-            
+
             if (nomenklature == null)
                 return null;
 
-            // Calculate the total price.
-            // Start with a quantity of 1 for the top product.
-            // 1 is stored as a const to avoid using "magic numbers" directly in code.
-            var totalPrice = CalculateTotalPrice(nomenklature, InitQuantity);
+            var currentLink = _linkRepository.GetById(nomenklature.Id);
 
-            return new NomenklatureDTO
+            // If the product has no parent, start with a quantity of 1 for the top product.
+            // 1 is stored as a const to avoid using "magic numbers" directly in code.
+            var initialQuantity = currentLink?.Quantity ?? InitQuantity;
+
+            // Calculate the total price.
+            var totalPrice = CalculateTotalPrice(nomenklature, initialQuantity);
+
+            return new NomenklatureDetailDTO
             {
                 Id = nomenklature.Id,
                 Name = nomenklature.Name,
-                Price = nomenklature.Price
+                Price = nomenklature.Price,
+                TotalPrice = totalPrice
             };
         }
 
         private decimal CalculateTotalPrice(Nomenklature nomenklature, int quantity)
         {
-            decimal totalPrice = nomenklature.Price * quantity;
+            decimal childTotalPrice = 0;
             var childLinks = _linkRepository.GetByParentId(nomenklature.Id);
 
             // Calculate the total price for all child nomenklatures.
@@ -80,10 +93,11 @@ namespace ProductManagement.Services
                 var childNomenklature = _nomenklatureRepository.GetById(link.NomenklatureId);
 
                 if (childNomenklature != null)
-                    totalPrice += CalculateTotalPrice(childNomenklature, link.Quantity);
+                    childTotalPrice += CalculateTotalPrice(childNomenklature, link.Quantity);
             }
 
-            return totalPrice;
+            // Return total price: (nomenklature price + childTotalPrice) * quantity.
+            return (nomenklature.Price + childTotalPrice) * quantity;
         }
 
         public void UpdateNomenklature(int id, NomenklatureDTO nomenklatureDTO)
