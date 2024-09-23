@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ProductManagement.DTOs;
 using ProductManagement.Services;
 
@@ -17,17 +16,17 @@ namespace ProductManagement.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddLink(LinkDTO linkDTO)
+        public async Task<IActionResult> AddLink(LinkDTO linkDTO)
         {
-            _linkService.AddLink(linkDTO);
+            await _linkService.AddLinkAsync(linkDTO);
 
             return Ok();
         }
 
         [HttpDelete]
-        public IActionResult DeleteLink(int id)
+        public async Task<IActionResult> DeleteLink(int id)
         {
-            _linkService.DeleteLink(id);
+            await _linkService.DeleteLinkAsync(id);
 
             return Ok();
         }

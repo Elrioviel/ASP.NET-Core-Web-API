@@ -16,25 +16,25 @@ POST {{ProductManagement_HostAddress}}/api/nomenklatures
 Content-Type: application/json
 
 {
-  "name": "Продукт 10",
-  "price": 150.00
+  "name": "Продукт 11",
+  "price": 180.00
 }
 
 ###
 
 ### Update a Nomenklature
-PUT {{ProductManagement_HostAddress}}/api/nomenklatures/8
+PUT {{ProductManagement_HostAddress}}/api/nomenklatures/10
 Content-Type: application/json
 
 {
-  "name": "Продукт 9",
-  "price": 200.00
+  "name": "Продукт 12",
+  "price": 280.00
 }
 
 ###
 
 ### Delete aa Nomenklature
-DELETE {{ProductManagement_HostAddress}}/api/nomenklatures/8
+DELETE {{ProductManagement_HostAddress}}/api/nomenklatures/10
 
 ###
 
@@ -55,5 +55,5 @@ DELETE {{ProductManagement_HostAddress}}/api/nomenklatures/link
 Content-Type: application/json
 
 {
-  "id": 7
+  "id": 10
 }

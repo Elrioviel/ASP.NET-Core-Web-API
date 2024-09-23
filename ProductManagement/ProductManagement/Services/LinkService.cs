@@ -13,7 +13,7 @@ namespace ProductManagement.Services
             _linkRepository = linkRepository;
         }
 
-        public void AddLink(LinkDTO linkDTO)
+        public async Task AddLinkAsync(LinkDTO linkDTO)
         {
             var link = new Link
             {
@@ -22,22 +22,22 @@ namespace ProductManagement.Services
                 Quantity = linkDTO.Quantity
             };
 
-            _linkRepository.Add(link);
+            await _linkRepository.AddAsync(link);
         }
 
-        public void DeleteLink(int id)
+        public async Task DeleteLinkAsync(int id)
         {
-            var link = _linkRepository.GetById(id);
+            var link = await _linkRepository.GetByIdAsync(id);
 
             if (link == null)
                 return;
 
-            _linkRepository.Delete(link);
+            await _linkRepository.DeleteAsync(link);
         }
 
-        public IEnumerable<LinkDTO> GetAllLinks()
+        public async Task<IEnumerable<LinkDTO>> GetAllLinksAsync()
         {
-            var links = _linkRepository.GetAll();
+            var links = await _linkRepository.GetAllAsync();
 
             return links.Select(l => new LinkDTO
             {
@@ -48,9 +48,9 @@ namespace ProductManagement.Services
             }).ToList();
         }
 
-        public LinkDTO GetLinkById(int id)
+        public async Task<LinkDTO> GetLinkByIdAsync(int id)
         {
-            var link = _linkRepository.GetById(id);
+            var link = await _linkRepository.GetNomenklatureByIdAsync(id);
             
             if (link == null)
                 return null;

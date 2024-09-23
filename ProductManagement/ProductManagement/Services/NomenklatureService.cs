@@ -16,7 +16,7 @@ namespace ProductManagement.Services
             _linkRepository = linkRepository;
         }
 
-        public void AddNomenklature(NomenklatureDTO nomenklatureDTO)
+        public async Task AddNomenklatureAsync(NomenklatureDTO nomenklatureDTO)
         {
             var nomenklature = new Nomenklature
             {
@@ -24,30 +24,36 @@ namespace ProductManagement.Services
                 Price = nomenklatureDTO.Price
             };
 
-            _nomenklatureRepository.Add(nomenklature);
+            await _nomenklatureRepository.AddAsync(nomenklature);
         }
 
-        public void DeleteNomenklatureById(int id)
+        public async Task DeleteNomenklatureByIdAsync(int id)
         {
-            var nomenklature = _nomenklatureRepository.GetById(id);
-            var childLinks = _linkRepository.GetByParentId(id);
+            var nomenklature = await _nomenklatureRepository.GetByIdAsync(id);
 
             if (nomenklature == null)
                 return;
+            // Delete child link first.
+            DeleteChildLinksAsync(id);
 
+            // Delete parent nomenklature.
+            await _nomenklatureRepository.DeleteAsync(nomenklature);
+        }
+
+        private async Task DeleteChildLinksAsync(int parentId)
+        {
+            var childLinks = await _linkRepository.GetByParentIdAsync(parentId);
+            
             // Ensure cascade delete from link where nomenklature is parent.
             foreach (var link in childLinks)
             {
-                _linkRepository.Delete(link);
+                await _linkRepository.DeleteAsync(link);
             }
-
-            // Delete parent nomenklature.
-            _nomenklatureRepository.Delete(nomenklature);
         }
 
-        public IEnumerable<NomenklatureDTO> GetAllNomenklatures()
+        public async Task<IEnumerable<NomenklatureDTO>> GetAllNomenklaturesAsync()
         {
-            var nomenklatures = _nomenklatureRepository.GetAll();
+            var nomenklatures = await _nomenklatureRepository.GetAllAsync();
 
             return nomenklatures.Select(n => new NomenklatureDTO
             {
@@ -57,21 +63,21 @@ namespace ProductManagement.Services
             }).ToList();
         }
 
-        public NomenklatureDetailDTO GetNomenklatureById(int id)
+        public async Task<NomenklatureDetailDTO> GetNomenklatureByIdAsync(int id)
         {
-            var nomenklature = _nomenklatureRepository.GetById(id);
+            var nomenklature = await _nomenklatureRepository.GetByIdAsync(id);
 
             if (nomenklature == null)
                 return null;
 
-            var currentLink = _linkRepository.GetById(nomenklature.Id);
+            var currentLink = await _linkRepository.GetNomenklatureByIdAsync(nomenklature.Id);
 
             // If the product has no parent, start with a quantity of 1 for the top product.
             // 1 is stored as a const to avoid using "magic numbers" directly in code.
             var initialQuantity = currentLink?.Quantity ?? InitQuantity;
 
             // Calculate the total price.
-            var totalPrice = CalculateTotalPrice(nomenklature, initialQuantity);
+            var totalPrice = await CalculateTotalPriceAsync(nomenklature, initialQuantity);
 
             return new NomenklatureDetailDTO
             {
@@ -82,35 +88,35 @@ namespace ProductManagement.Services
             };
         }
 
-        private decimal CalculateTotalPrice(Nomenklature nomenklature, int quantity)
+        private async Task<decimal> CalculateTotalPriceAsync(Nomenklature nomenklature, int quantity)
         {
             decimal childTotalPrice = 0;
-            var childLinks = _linkRepository.GetByParentId(nomenklature.Id);
+            var childLinks = await _linkRepository.GetByParentIdAsync(nomenklature.Id);
 
             // Calculate the total price for all child nomenklatures.
             foreach (var link in childLinks)
             {
-                var childNomenklature = _nomenklatureRepository.GetById(link.NomenklatureId);
+                var childNomenklature = await _nomenklatureRepository.GetByIdAsync(link.NomenklatureId);
 
                 if (childNomenklature != null)
-                    childTotalPrice += CalculateTotalPrice(childNomenklature, link.Quantity);
+                    childTotalPrice += await CalculateTotalPriceAsync(childNomenklature, link.Quantity);
             }
 
             // Return total price: (nomenklature price + childTotalPrice) * quantity.
             return (nomenklature.Price + childTotalPrice) * quantity;
         }
 
-        public void UpdateNomenklature(int id, NomenklatureDTO nomenklatureDTO)
+        public async Task UpdateNomenklatureAsync(int id, NomenklatureDTO nomenklatureDTO)
         {
-            var nomenklature = _nomenklatureRepository.GetById(id);
+            var nomenklature = await _nomenklatureRepository.GetByIdAsync(id);
 
             if (nomenklature == null)
                 return;
 
             nomenklature.Name = nomenklatureDTO.Name;
-            nomenklature.Price = nomenklature.Price;
+            nomenklature.Price = nomenklatureDTO.Price;
 
-            _nomenklatureRepository.Update(nomenklature);
+            await _nomenklatureRepository.UpdateAsync(nomenklature);
         }
     }
 }

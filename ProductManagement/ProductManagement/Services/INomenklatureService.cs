@@ -4,10 +4,10 @@ namespace ProductManagement.Services
 {
     public interface INomenklatureService
     {
-        IEnumerable<NomenklatureDTO> GetAllNomenklatures();
-        NomenklatureDetailDTO GetNomenklatureById(int id);
-        void UpdateNomenklature(int id, NomenklatureDTO nomenklatureDTO);
-        void DeleteNomenklatureById(int id);
-        void AddNomenklature(NomenklatureDTO nomenklatureDTO);
+        Task<IEnumerable<NomenklatureDTO>> GetAllNomenklaturesAsync();
+        Task<NomenklatureDetailDTO> GetNomenklatureByIdAsync(int id);
+        Task UpdateNomenklatureAsync(int id, NomenklatureDTO nomenklatureDTO);
+        Task DeleteNomenklatureByIdAsync(int id);
+        Task AddNomenklatureAsync(NomenklatureDTO nomenklatureDTO);
     }
 }

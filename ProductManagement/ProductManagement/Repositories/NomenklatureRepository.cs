@@ -1,4 +1,5 @@
-﻿using ProductManagement.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using ProductManagement.Data;
 using ProductManagement.Models.Entities;
 
 namespace ProductManagement.Repositories
@@ -12,32 +13,44 @@ namespace ProductManagement.Repositories
             _dbContext = dbContext;
         }
         
-        public void Add(Nomenklature nomenklature)
+        public async Task AddAsync(Nomenklature nomenklature)
         {
-            _dbContext.Nomenklatures.Add(nomenklature);
-            _dbContext.SaveChanges();
+            _dbContext.Nomenklatures.AddAsync(nomenklature);
+            await SaveChangesAsync();
         }
 
-        public void Delete(Nomenklature nomenklature)
+        public async Task DeleteAsync(Nomenklature nomenklature)
         {
             _dbContext.Nomenklatures.Remove(nomenklature);
-            _dbContext.SaveChanges();
+            await SaveChangesAsync();
         }
 
-        public IEnumerable<Nomenklature> GetAll()
+        public async Task<IEnumerable<Nomenklature>> GetAllAsync()
         {
-            return _dbContext.Nomenklatures.ToList();
+            return await _dbContext.Nomenklatures.ToListAsync();
         }
 
-        public Nomenklature GetById(int id)
+        public async Task<Nomenklature> GetByIdAsync(int id)
         {
-            return _dbContext.Nomenklatures.FirstOrDefault(n => n.Id == id);
+            return await _dbContext.Nomenklatures.FirstOrDefaultAsync(n => n.Id == id);
         }
 
-        public void Update(Nomenklature nomenklature)
+        public async Task UpdateAsync(Nomenklature nomenklature)
         {
             _dbContext.Nomenklatures.Update(nomenklature);
-            _dbContext.SaveChanges();
+            await SaveChangesAsync();
+        }
+
+        private async Task SaveChangesAsync()
+        {
+            try
+            {
+                await _dbContext.SaveChangesAsync();
+            }
+            catch (DbUpdateException ex)
+            {
+                throw new Exception("Error updating database", ex);
+            }
         }
     }
 }

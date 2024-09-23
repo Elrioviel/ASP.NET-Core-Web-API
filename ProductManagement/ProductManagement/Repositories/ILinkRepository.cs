@@ -4,10 +4,11 @@ namespace ProductManagement.Repositories
 {
     public interface ILinkRepository
     {
-        IEnumerable<Link> GetAll();
-        Link GetById(int id);
-        void Add(Link link);
-        void Delete(Link link);
-        IEnumerable<Link> GetByParentId(int parentId);
+        Task<IEnumerable<Link>> GetAllAsync();
+        Task<Link> GetNomenklatureByIdAsync(int id);
+        Task<Link> GetByIdAsync(int id);
+        Task AddAsync(Link link);
+        Task DeleteAsync(Link link);
+        Task<IEnumerable<Link>> GetByParentIdAsync(int parentId);
     }
 }

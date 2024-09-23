@@ -1,4 +1,5 @@
-﻿using ProductManagement.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using ProductManagement.Data;
 using ProductManagement.Models.Entities;
 
 namespace ProductManagement.Repositories
@@ -12,31 +13,48 @@ namespace ProductManagement.Repositories
             _dbContext = dbContext;
         }
 
-        public void Add(Link link)
+        public async Task AddAsync(Link link)
         {
-            _dbContext.Links.Add(link);
-            _dbContext.SaveChanges();
+            await _dbContext.Links.AddAsync(link);
+            await SaveChangesAsync();
         }
 
-        public void Delete(Link link)
+        public async Task DeleteAsync(Link link)
         {
             _dbContext.Links.Remove(link);
-            _dbContext.SaveChanges();
+            await SaveChangesAsync();
         }
 
-        public IEnumerable<Link> GetAll()
+        public async Task<IEnumerable<Link>> GetAllAsync()
         {
-            return _dbContext.Links.ToList();
+            return await _dbContext.Links.ToListAsync();
         }
 
-        public Link GetById(int id)
+        public async Task<Link> GetNomenklatureByIdAsync(int id)
         {
-            return _dbContext.Links.FirstOrDefault(n => n.NomenklatureId == id);
+            return await _dbContext.Links.FirstOrDefaultAsync(n => n.NomenklatureId == id);
         }
 
-        public IEnumerable<Link> GetByParentId(int parentId)
+        public async Task<Link> GetByIdAsync(int id)
         {
-            return _dbContext.Links.Where(l => l.ParentId == parentId).ToList();
+            return await _dbContext.Links.FirstOrDefaultAsync(n => n.Id == id);
+        }
+
+        public async Task<IEnumerable<Link>> GetByParentIdAsync(int parentId)
+        {
+            return await _dbContext.Links.Where(l => l.ParentId == parentId).ToListAsync();
+        }
+
+        private async Task SaveChangesAsync()
+        {
+            try
+            {
+                await _dbContext.SaveChangesAsync();
+            }
+            catch (DbUpdateException ex)
+            {
+                throw new Exception("Error updating database", ex);
+            }
         }
     }
 }

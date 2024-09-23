@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using ProductManagement.Data;
+﻿using Microsoft.AspNetCore.Mvc;
 using ProductManagement.DTOs;
 using ProductManagement.Services;
 
@@ -17,17 +15,17 @@ namespace ProductManagement.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllNomenklatures()
+        public async Task<IActionResult> GetAllNomenklatures()
         {
-            var allNomenklatures = _nomenklatureService.GetAllNomenklatures();
+            var allNomenklatures = await _nomenklatureService.GetAllNomenklaturesAsync();
 
             return Ok(allNomenklatures);
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetNomenklatureById(int id)
+        public async Task<IActionResult> GetNomenklatureById(int id)
         {
-            var nomenklature = _nomenklatureService.GetNomenklatureById(id);
+            var nomenklature = await _nomenklatureService.GetNomenklatureByIdAsync(id);
 
             if (nomenklature == null)
                 return NotFound();
@@ -36,25 +34,25 @@ namespace ProductManagement.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddNomenklature(NomenklatureDTO nomenklatureDTO)
+        public async Task<IActionResult> AddNomenklature(NomenklatureDTO nomenklatureDTO)
         {
-            _nomenklatureService.AddNomenklature(nomenklatureDTO);
+            await _nomenklatureService.AddNomenklatureAsync(nomenklatureDTO);
             
             return Ok();
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateNomenklature(int id, NomenklatureDTO nomenklatureDTO)
+        public async Task<IActionResult> UpdateNomenklature(int id, NomenklatureDTO nomenklatureDTO)
         {
-            _nomenklatureService.UpdateNomenklature(id, nomenklatureDTO);
+            await _nomenklatureService.UpdateNomenklatureAsync(id, nomenklatureDTO);
 
             return Ok();
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteNomenklature(int id)
+        public async Task<IActionResult> DeleteNomenklature(int id)
         {
-            _nomenklatureService.DeleteNomenklatureById(id);
+            await _nomenklatureService.DeleteNomenklatureByIdAsync(id);
 
             return Ok();
         }

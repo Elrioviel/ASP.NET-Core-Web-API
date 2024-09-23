@@ -4,9 +4,9 @@ namespace ProductManagement.Services
 {
     public interface ILinkService
     {
-        IEnumerable<LinkDTO> GetAllLinks();
-        LinkDTO GetLinkById(int id);
-        void AddLink(LinkDTO linkDTO);
-        void DeleteLink(int id);
+        Task <IEnumerable<LinkDTO>> GetAllLinksAsync();
+        Task<LinkDTO> GetLinkByIdAsync(int id);
+        Task AddLinkAsync(LinkDTO linkDTO);
+        Task DeleteLinkAsync(int id);
     }
 }

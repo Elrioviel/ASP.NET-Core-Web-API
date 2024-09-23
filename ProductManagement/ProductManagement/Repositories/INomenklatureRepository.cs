@@ -4,10 +4,10 @@ namespace ProductManagement.Repositories
 {
     public interface INomenklatureRepository
     {
-        IEnumerable<Nomenklature> GetAll();
-        Nomenklature GetById(int id);
-        void Add(Nomenklature nomenklature);
-        void Update(Nomenklature nomenklature);
-        void Delete(Nomenklature nomenklature);
+        Task<IEnumerable<Nomenklature>> GetAllAsync();
+        Task<Nomenklature> GetByIdAsync(int id);
+        Task AddAsync(Nomenklature nomenklature);
+        Task UpdateAsync(Nomenklature nomenklature);
+        Task DeleteAsync(Nomenklature nomenklature);
     }
 }
