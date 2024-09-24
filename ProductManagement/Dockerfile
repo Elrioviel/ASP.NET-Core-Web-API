@@ -1,10 +1,9 @@
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:8.0-nanoserver-ltsc2022 AS base
 WORKDIR /app
 EXPOSE 80
-EXPOSE 81
 
 # Using the SDK image to build the application
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0-nanoserver-ltsc2022 AS build
 WORKDIR /src
 
 # Copying the solution file and restoring the project dependencies

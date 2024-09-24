@@ -1,5 +1,5 @@
 # Dockerfile for Entity Framework Commands
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS ef
+FROM mcr.microsoft.com/dotnet/sdk:8.0-windowsservercore-ltsc2019 AS ef
 WORKDIR /src
 
 # Copying the project files

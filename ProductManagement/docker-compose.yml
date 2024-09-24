@@ -1,16 +1,14 @@
-version: '3.8'
-
 services:
   # SQL server container
   db:
-    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    image: mcr.microsoft.com/windows/servercore:ltsc2019
     environment:
       - SA_PASSWORD=My3A3M@nbL
       - ACCEPT_EULA=Y
     ports:
       - "1433:1433"
     volumes:
-      - mssql_data:/var/opt/mssql
+      - mssql_data:C:/ProgramData/Microsoft/SQLServer
 
   # ASP.NET Core app container
   webapp:
