@@ -1,0 +1,18 @@
+# Dockerfile for Entity Framework Commands
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS ef
+WORKDIR /src
+
+# Copying the project files
+COPY ["ProductManagement.sln", "./"]
+COPY ["ProductManagement/ProductManagement.csproj", "ProductManagement/"]
+RUN dotnet restore "ProductManagement/ProductManagement.csproj"
+
+# Installing EF tools
+RUN dotnet tool install --global dotnet-ef
+ENV PATH="$PATH:/root/.dotnet/tools"
+
+# Copying the rest of the app source code
+COPY . .
+
+# Setting the working directory to the project folder
+WORKDIR "/src/ProductManagement"

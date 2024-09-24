@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  # SQL server container
+  db:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    environment:
+      - SA_PASSWORD=My3A3M@nbL
+      - ACCEPT_EULA=Y
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+
+  # ASP.NET Core app container
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings_DefaultConnection="Server=db;Database=ProductsDb;User=sa;Password=My3A3M@nbL;"
+    depends_on:
+      - db
+
+  # Build services for Entity Framework commands
+  ef:
+    build:
+      context: .
+      dockerfile: Dockerfile.ef
+    working_dir: /src/ProductManagement
+    entrypoint: ["dotnet", "ef"]
+    command: ["database", "update"]
+    depends_on:
+      - db
+
+volumes:
+  mssql_data:
