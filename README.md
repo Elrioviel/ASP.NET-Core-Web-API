@@ -1,7 +1,7 @@
 # Product Management API
 
 ## Overview
-**Product Management API** built with **ASP.NET Core** and **Entity Framework** using a **code-first** approach fr database management.
+**Product Management API** built with **ASP.NET Core** and **Entity Framework** using a **code-first** approach for database management.
 This API provides **CRUD** operation, using a **layered architecture** with **asynchronous** methods for improved performance and scalability.
 
 ## Features
